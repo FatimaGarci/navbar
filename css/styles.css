@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    background-image: url(../imgs/hero.jpeg);
+    background-image: url('https://images.unsplash.com/photo-1507120410856-1f35574c3b45?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
     background-position: center;
     height: 100vh;
     opacity: 85%;
@@ -35,15 +35,16 @@ header {
 }
 .change{
     right: 0;
+    box-shadow: black 2px 2px 20px;
 }
 .change .line--1{
-    transform: rotateZ(-405deg) translate(-8px, 8px);/* mueve las lineas del navbar*/
+    transform: rotateZ(-405deg) translate(-8px, 7px);/* mueve las lineas del navbar*/
 }
 .change .line--2{
     opacity: 0;
 }
 .change .line--3{
-    transform: rotateZ(405deg) translate(-8px, -8px);
+    transform: rotateZ(405deg) translate(-8px, -7px);
 }
 .change .hamburger--container{
     background-color: transparent;
@@ -52,6 +53,22 @@ header {
 .logo {
     height: 100px;
     margin: 30px;
+}
+
+.hero--wrapper{
+    margin: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: neon 100ms ease-in-out infinite;
+}
+
+.hero--text{
+    color: white;
+    text-align: center;
+    font-size: 4.8rem;
+    
 }
 
 .hamburger--container {
@@ -67,10 +84,11 @@ header {
     flex-direction: column;
     align-content: center;
     justify-content: space-around;
+    box-shadow: black 5px 10px 20px;
 }
 
 .hamburger--line {
-    background-color: red;
+    background-color: #FF2E8D;
     width: 100%;
     height: 5px;
     ;
@@ -78,11 +96,12 @@ header {
 
 .ul--navlinks li {
     margin: 50px;
+    text-align: center;
 }
 
 .ul--navlinks li a {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.80rem;
     text-decoration: none;
     text-transform: uppercase;
 }
